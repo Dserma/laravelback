@@ -2,6 +2,18 @@
 
 All notable changes to `spatie/laravel-activitylog` will be documented in this file
 
+## 2.8.4. - 2018-09-23
+- improve migration
+
+## 2.8.3 - 2018-09-01
+- add support for L5.7
+
+## 2.8.2 - 2018-07-28
+- allow `null` to be passed to `causedBy`
+
+## 2.8.1 - 2018-07-28
+- make sure a fresh instance of `ActivityLogger` is used
+
 ## 2.8.0 - 2018-07-21
 - add `enableLogging()` and `disableLogging()`
 

@@ -2,6 +2,20 @@
 
 All notable changes to `laravel-cors` will be documented in this file
 
+## 1.3.1 - 2018-08-31
+
+- return default value for allow credentials when not available in config
+
+## 1.3.0 - 2018-08-30
+
+**THIS VERSION DOES NOT WORK, DO NOT USE**
+
+- add support for `Access-Control-Allow-Credentials`
+
+## 1.2.3 - 2018-08-27
+
+- add support for Laravel 5.7
+
 ## 1.2.2 - 2018-05-05
 
 - add support for streamed responses

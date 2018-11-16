@@ -59,6 +59,8 @@ return [
      */
     'default_profile' => [
 
+        'allow_credentials' => false,
+
         'allow_origins' => [
             '*',
         ],
@@ -158,7 +160,7 @@ namespace App\Services\Cors;
 
 use Spatie\Cors\CorsProfile\DefaultProfile;
 
-class UserBasedCorsProfile extends DefaultProfile;
+class UserBasedCorsProfile extends DefaultProfile
 {
     public function allowOrigins(): array
     {

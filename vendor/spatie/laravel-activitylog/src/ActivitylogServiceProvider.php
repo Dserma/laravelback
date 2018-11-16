@@ -9,9 +9,6 @@ use Spatie\Activitylog\Exceptions\InvalidConfiguration;
 
 class ActivitylogServiceProvider extends ServiceProvider
 {
-    /**
-     * Bootstrap the application events.
-     */
     public function boot()
     {
         $this->publishes([
@@ -29,9 +26,6 @@ class ActivitylogServiceProvider extends ServiceProvider
         }
     }
 
-    /**
-     * Register the service provider.
-     */
     public function register()
     {
         $this->app->bind('command.activitylog:clean', CleanActivitylogCommand::class);
@@ -40,7 +34,9 @@ class ActivitylogServiceProvider extends ServiceProvider
             'command.activitylog:clean',
         ]);
 
-        $this->app->singleton(ActivityLogger::class);
+        $this->app->bind(ActivityLogger::class);
+
+        $this->app->singleton(ActivityLogStatus::class);
     }
 
     public static function determineActivityModel(): string

@@ -65,7 +65,7 @@
                 <div class="pull-right hidden-xs">
                     <b>Versão</b> 1.0.0
                 </div>
-                <strong>Copyright &copy; {{date('Y')}} <a href="http://www.voxdigital.com.br" target="_new">Vox Digital</a>.</strong> Todos os direitos reservados.
+                <strong>Copyright &copy; {{date('Y')}} <a href="http://www.refreshweb.com.br" target="_new">RefreshWeb</a>.</strong> Todos os direitos reservados.
             </footer>
         </div>
     </body>

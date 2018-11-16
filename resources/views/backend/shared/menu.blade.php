@@ -3,11 +3,11 @@
   <a href="index2.html" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
     <span class="logo-mini">
-      <b>BC</b>
+      <b>Bk</b>
     </span>
     <!-- logo for regular state and mobile devices -->
     <span class="logo-lg">
-      Banco de Contemplados
+      Back
     </span>
   </a>
   <!-- Header Navbar: style can be found in header.less -->
@@ -433,111 +433,7 @@
             </li>
           </ul>
         </li>
-      <li class="header">
-        <b>SISTEMA</b>
-      </li>
-      <li class="treeview @if(route::current()->getName() == 'backend.administradoras') active menu-open @endif">
-        <a href="#">
-          <i class="fa fa-university"></i>
-          <span>Administradoras</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
-        </a>
-        <ul class="treeview-menu">
-          <li class="@if(Route::current()->getName() == 'backend.administradoras') active @endif">
-            <a href="{{route('backend.administradoras')}}">
-              <i class="fa fa-list"></i> Listar Administradoras</a>
-          </li>
-        </ul>
-      </li>
-      <li class="treeview @if(route::current()->getName() == 'backend.investidores') active menu-open @endif">
-        <a href="#">
-          <i class="fa fa-gg-circle"></i>
-          <span>Investidores</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
-        </a>
-        <ul class="treeview-menu">
-          <li class="@if(Route::current()->getName() == 'backend.investidores') active @endif">
-            <a href="{{route('backend.investidores')}}">
-              <i class="fa fa-list"></i> Listar Investidores</a>
-          </li>
-        </ul>
-      </li>
-      <li class="treeview @if(in_array(route::current()->getName(), ['backend.cotas.imoveis', 'backend.cotas.automoveis','backend.cotas.cota.agrupada', 'backend.cotas.imprimir.imoveis', 'backend.cotas.imprimir.automoveis'])) active menu-open @endif">
-        <a href="#">
-          <i class="fa fa-line-chart"></i>
-          <span>Cotas</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
-        </a>
-        <ul class="treeview-menu">
-          <li class="@if(Route::current()->getName() == 'backend.cotas.imoveis') active @endif">
-            <a href="{{route('backend.cotas.imoveis')}}">
-              <i class="fa fa-building"></i> Cotas de Imóveis</a>
-          </li>
-          <li class="@if(Route::current()->getName() == 'backend.cotas.automoveis') active @endif">
-            <a href="{{route('backend.cotas.automoveis')}}">
-              <i class="fa fa-car"></i> Cotas de Automóveis</a>
-          </li>
-          <li class="@if(Route::current()->getName() == 'backend.cotas.imprimir.imoveis') active @endif">
-            <a href="{{route('backend.cotas.imprimir.imoveis')}}">
-              <i class="fa fa-print"></i> Imprimir Cotas - Imóveis </a>
-          </li>
-          <li class="@if(Route::current()->getName() == 'backend.cotas.imprimir.automoveis') active @endif">
-            <a href="{{route('backend.cotas.imprimir.automoveis')}}">
-              <i class="fa fa-print"></i> Imprimir Cotas - Automóveis </a>
-          </li>
-        </ul>
-      </li>
-      <li class="treeview @if(route::current()->getName() == 'backend.simulacoes') active menu-open @endif">
-        <a href="#">
-          <i class="fa fa-info"></i>
-          <span>Simulações</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
-        </a>
-        <ul class="treeview-menu">
-          <li class="@if(Route::current()->getName() == 'backend.simulacoes') active @endif">
-            <a href="{{route('backend.simulacoes')}}">
-              <i class="fa fa-list"></i> Listar Simulações</a>
-          </li>
-        </ul>
-      </li>
-      <li class="treeview @if(route::current()->getName() == 'backend.clientes') active menu-open @endif">
-        <a href="#">
-          <i class="fa fa-user-circle-o"></i>
-          <span>Clientes</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
-        </a>
-        <ul class="treeview-menu">
-          <li class="@if(Route::current()->getName() == 'backend.clientes') active @endif">
-            <a href="{{route('backend.clientes')}}">
-              <i class="fa fa-list"></i> Listar Clientes </a>
-          </li>
-        </ul>
-      </li>
-      <li class="treeview @if(route::current()->getName() == 'backend.pedidos') active menu-open @endif">
-        <a href="#">
-          <i class="fa fa-pencil-square"></i>
-          <span>Pedidos</span>
-          <span class="pull-right-container">
-            <i class="fa fa-angle-left pull-right"></i>
-          </span>
-        </a>
-        <ul class="treeview-menu">
-          <li class="@if(Route::current()->getName() == 'backend.pedidos') active @endif">
-            <a href="{{route('backend.pedidos')}}">
-              <i class="fa fa-list"></i> Listar Pedidos </a>
-          </li>
-        </ul>
-      </li>
+      
       <li class="treeview @if(route::current()->getName() == 'backend.usuarios') active menu-open @endif">
         <a href="#">
           <i class="fa fa-users"></i>

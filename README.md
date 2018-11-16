@@ -19,7 +19,11 @@ Sei que ele não está perfeito e nem que meu código é o melhor do mundo, mas 
 ## Como utilizar
 
 Basta clonar ou baixar todo o código e alterar o <b>.env</b> para os seus dados.
-Depois disso, basta rodar o [code] php artisan migrate [/code], para que as tabelas sejam criadas, e logo após, o [code] php artisan db:seed [/code].
+Depois disso, basta rodar: 
+```
+ php artisan migrate 
+ ```
+ para que as tabelas sejam criadas, e logo após, o [code] php artisan db:seed [/code].
 O "seed" irá criar as credenciais de acesso, sendo elas:
  - Usuário: admin
  - Senha: admin

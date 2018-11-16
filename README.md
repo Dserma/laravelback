@@ -23,7 +23,7 @@ Depois disso, basta rodar:
 ```console
  php artisan migrate 
  ```
- para que as tabelas sejam criadas, e logo após, o:
+ para que as tabelas sejam criadas, e logo após:
 
 ```console
 php artisan db:seed

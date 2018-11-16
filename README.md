@@ -20,10 +20,15 @@ Sei que ele não está perfeito e nem que meu código é o melhor do mundo, mas 
 
 Basta clonar ou baixar todo o código e alterar o <b>.env</b> para os seus dados.
 Depois disso, basta rodar: 
-```
+```laravel
  php artisan migrate 
  ```
- para que as tabelas sejam criadas, e logo após, o [code] php artisan db:seed [/code].
+ para que as tabelas sejam criadas, e logo após, o:
+
+```
+php artisan db:seed
+```
+
 O "seed" irá criar as credenciais de acesso, sendo elas:
  - Usuário: admin
  - Senha: admin

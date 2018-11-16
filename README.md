@@ -20,12 +20,12 @@ Sei que ele não está perfeito e nem que meu código é o melhor do mundo, mas 
 
 Basta clonar ou baixar todo o código e alterar o <b>.env</b> para os seus dados.
 Depois disso, basta rodar: 
-```laravel
+```console
  php artisan migrate 
  ```
  para que as tabelas sejam criadas, e logo após, o:
 
-```
+```console
 php artisan db:seed
 ```
 

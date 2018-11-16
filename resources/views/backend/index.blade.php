@@ -23,7 +23,7 @@
       <!-- small box -->
       <div class="small-box bg-yellow">
         <div class="inner">
-          <h3>{{$cotasImoveis}}</h3>
+          <h3>20</h3>
           <p>Cotas de Imóveis</p>
         </div>
         <div class="icon">
@@ -39,7 +39,7 @@
       <!-- small box -->
       <div class="small-box bg-blue">
         <div class="inner">
-          <h3>{{$cotasAutos}}
+          <h3>10
           </h3>
           <p>Cotas de Automóveis</p>
         </div>
@@ -56,7 +56,7 @@
       <!-- small box -->
       <div class="small-box bg-aqua">
         <div class="inner">
-          <h3>{{$simulacoes}}</h3>
+          <h3>10</h3>
           <p>Simulações</p>
         </div>
         <div class="icon">
@@ -72,7 +72,7 @@
       <!-- small box -->
       <div class="small-box bg-red">
         <div class="inner">
-          <h3>{{$pedidos}}</h3>
+          <h3>10</h3>
           <p>Pedidos Novos</p>
         </div>
         <div class="icon">

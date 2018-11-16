@@ -34,4 +34,7 @@ O "seed" irá criar as credenciais de acesso, sendo elas:
  - Usuário: admin
  - Senha: admin
 
+Para acessar, basta adicionar "/backend" à url de acesso, por exemplo: http://localhost/back/backend.
+<br>
+
 Bom "divertimento"!

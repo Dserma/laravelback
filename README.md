@@ -19,7 +19,12 @@ Sei que ele não está perfeito e nem que meu código é o melhor do mundo, mas 
 
 ## Como utilizar
 
-Basta clonar ou baixar todo o código e alterar o <b>.env</b> para os seus dados.
+Basta clonar ou baixar todo o código e alterar o <b>.env</b> para os seus dados e rodar, dentro da pasta da aplicação:
+
+```console
+composer update
+```
+
 Depois disso, basta rodar: 
 ```console
  php artisan migrate 

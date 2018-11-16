@@ -11,9 +11,10 @@
 
 ## Laravelback
 
-Laravelback é um sistema backend feito em Laravel com AdminLte 2. 
-Ele utiliza Ajax Calls, feitos em jQuery, para realizar as ações CRUD, além de utilizar alguns outros componentes, como Datatables, Toastr e etc.
-A intenção dele é facilitar a aprendizagem e o uso do AdminLte junto ao Laravel.
+Laravelback é um sistema backend feito em Laravel com AdminLte 2. <br>
+Ele utiliza Ajax Calls, feitos em jQuery, para realizar as ações CRUD, além de utilizar alguns outros componentes, como Datatables, Toastr e etc.<br>
+Ele utiliza também o Froala Editor, como editor de textos e como upload de imagens. Gosto do Froala, principalmente para as imagens, pois ele cria um tipo de "galeria de mídia".<br>
+A intenção dele é facilitar a aprendizagem e o uso do AdminLte junto ao Laravel.<br>
 Sei que ele não está perfeito e nem que meu código é o melhor do mundo, mas creio que devemos compartilhar o que sabemos, e como vejo muita gente com dificuldade em integrar o AdminLte ao Laravel, resolvi postar.
 
 ## Como utilizar

@@ -1,0 +1,162 @@
+/*
+ * Flex box
+ */
+.display-flex {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+}
+
+.flex-space-between {
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.flex-center {
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.flex-wrap {
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.flex {
+	-webkit-order: 0;
+	-ms-flex-order: 0;
+	order: 0;
+	-webkit-flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	-webkit-align-self: auto;
+	-ms-flex-item-align: auto;
+	align-self: auto;
+}
+
+.field, .column {
+	width: 100%;
+
+	&.size-1 {
+		max-width: 10%;
+	}
+
+	&.size-2 {
+		max-width: 20%;
+	}
+
+	&.size-3 {
+		max-width: 30%;
+	}
+
+	&.size-4 {
+		max-width: 40%;
+	}
+
+	&.size-5 {
+		max-width: 50%;
+	}
+
+	&.size-6 {
+		max-width: 60%;
+	}
+
+	&.size-7 {
+		max-width: 70%;
+	}
+
+	&.size-8 {
+		max-width: 80%;
+	}
+
+	&.size-9 {
+		max-width: 90%;
+	}
+}
+
+.field {
+	display: table;
+	margin-bottom: 20px;
+
+	&:last-child {
+		margin-bottom: 0px;
+	}
+
+	&.hidden {
+		display: none !important;
+	}
+}
+
+.fields, .columns {
+	width: 100%;
+	@extend .display-flex;
+
+	> .field, > .column {
+		@extend .flex;
+	}
+}
+
+.fields {
+	margin-bottom: 20px;
+
+	&:last-child {
+		margin-bottom: 0px;
+	}
+
+	> .field {
+		display: initial;
+		margin-bottom: 0px;
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+}
+
+#notification {
+	width: 100%;
+	display: table;
+
+	> .error, > .success, > .errors {
+		width: 100%;
+		display: table;
+		padding: 10px 20px;
+	}
+
+	> .errors {
+		background: #EA3636;
+		margin-bottom: 20px;
+
+		> ul {
+			> li {
+				color: #FFF;
+			}
+		}
+	}
+
+	> .error {
+		background: #EA3636;
+		color: #FFF;
+	}
+
+	> .success {
+		background: #47D44E;
+		color: #FFF;
+	}
+}

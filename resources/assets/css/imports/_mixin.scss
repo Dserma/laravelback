@@ -1,0 +1,70 @@
+@mixin rotate($deg) {
+    -ms-transform: rotate($deg);
+    -webkit-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+@mixin border-radius($top-left, $top-right, $bottom-right, $bottom-left) {
+	-webkit-border-top-left-radius: $top-left;
+	-webkit-border-top-right-radius: $top-right;
+	-webkit-border-bottom-right-radius: $bottom-right;
+	-webkit-border-bottom-left-radius: $bottom-left;
+	-moz-border-radius-topleft: $top-left;
+	-moz-border-radius-topright: $top-right;
+	-moz-border-radius-bottomright: $bottom-right;
+	-moz-border-radius-bottomleft: $bottom-left;
+	border-top-left-radius: $top-left;
+	border-top-right-radius: $top-right;
+	border-bottom-right-radius: $bottom-right;
+	border-bottom-left-radius: $bottom-left;
+}
+
+@mixin calc($property, $expression) { 
+	#{$property}: -webkit-calc(#{$expression});
+	#{$property}: -moz-calc(#{$expression});
+	#{$property}: -o-calc(#{$expression});
+	#{$property}: calc(#{$expression});
+} 
+
+@mixin linear-gradient($direction, $color-stops...) {
+	@if is-direction($direction) == false {
+		$color-stops: $direction, $color-stops;
+		$direction: 180deg;
+	}
+
+	background: nth(nth($color-stops, 1), 1);
+	background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+	background: linear-gradient($direction, $color-stops);
+}
+
+@mixin zoom($time, $scale) {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-webkit-transition: all $time ease;
+	-moz-transition: all $time ease;
+	-o-transition: all $time ease;
+	transition: all $time ease;
+
+	&:hover {
+		-webkit-transform: scale($scale); 
+	}
+}
+
+@mixin placeholder-color($color) {
+	::-webkit-input-placeholder {
+		color: $color;
+	}
+
+	:-moz-placeholder {
+		color: $color;
+	}
+
+	::-moz-placeholder {
+		color: $color;
+	}
+	
+	:-ms-input-placeholder {  
+		color: $color;
+	}
+}

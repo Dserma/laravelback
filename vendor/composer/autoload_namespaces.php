@@ -14,6 +14,5 @@ return array(
     'Maatwebsite\\Excel\\' => array($vendorDir . '/maatwebsite/excel/src'),
     'LaravelFtp' => array($vendorDir . '/dennissmink/laravel-ftp/src'),
     'FontLib\\' => array($vendorDir . '/phenx/php-font-lib/src'),
-    'Doctrine\\DBAL\\' => array($vendorDir . '/doctrine/dbal/lib'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib'),
 );

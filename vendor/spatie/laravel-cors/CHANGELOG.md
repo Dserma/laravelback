@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-cors` will be documented in this file
 
+## 1.3.2 - 2018-01-28
+
+- fix for Lumen
+
 ## 1.3.1 - 2018-08-31
 
 - return default value for allow credentials when not available in config
@@ -44,6 +48,6 @@ All notable changes to `laravel-cors` will be documented in this file
     
 - add support for Laravel 5.6
 
-## 1.0.0 - 2018-12-19
+## 1.0.0 - 2017-12-19
 
 - initial release
